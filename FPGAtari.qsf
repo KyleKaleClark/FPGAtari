@@ -1,0 +1,360 @@
+# -------------------------------------------------------------------------- #
+#
+# Copyright (C) 2018  Intel Corporation. All rights reserved.
+# Your use of Intel Corporation's design tools, logic functions 
+# and other software and tools, and its AMPP partner logic 
+# functions, and any output files from any of the foregoing 
+# (including device programming or simulation files), and any 
+# associated documentation or information are expressly subject 
+# to the terms and conditions of the Intel Program License 
+# Subscription Agreement, the Intel Quartus Prime License Agreement,
+# the Intel FPGA IP License Agreement, or other applicable license
+# agreement, including, without limitation, that your use is for
+# the sole purpose of programming logic devices manufactured by
+# Intel and sold by Intel or its authorized distributors.  Please
+# refer to the applicable agreement for further details.
+#
+# -------------------------------------------------------------------------- #
+#
+# Quartus Prime
+# Version 18.1.0 Build 625 09/12/2018 SJ Lite Edition
+# Date created = 23:05:56  February 27, 2025
+#
+# -------------------------------------------------------------------------- #
+#
+# Notes:
+#
+# 1) The default values for assignments are stored in the file:
+#		FPGAtari_assignment_defaults.qdf
+#    If this file doesn't exist, see file:
+#		assignment_defaults.qdf
+#
+# 2) Altera recommends that you do not modify this file. This
+#    file is updated automatically by the Quartus Prime software
+#    and any changes you make may be lost or overwritten.
+#
+# -------------------------------------------------------------------------- #
+
+
+set_global_assignment -name FAMILY "MAX 10"
+set_global_assignment -name DEVICE 10M50DAF484C6GES
+set_global_assignment -name TOP_LEVEL_ENTITY Living_Room
+set_global_assignment -name ORIGINAL_QUARTUS_VERSION 15.1.0
+set_global_assignment -name PROJECT_CREATION_TIME_DATE "17:45:13 JUNE 17,2016"
+set_global_assignment -name LAST_QUARTUS_VERSION "18.1.0 Lite Edition"
+set_global_assignment -name PROJECT_OUTPUT_DIRECTORY output_files
+set_global_assignment -name DEVICE_FILTER_PACKAGE FBGA
+set_global_assignment -name DEVICE_FILTER_PIN_COUNT 484
+set_global_assignment -name DEVICE_FILTER_SPEED_GRADE 6
+set_global_assignment -name MIN_CORE_JUNCTION_TEMP 0
+set_global_assignment -name MAX_CORE_JUNCTION_TEMP 85
+set_global_assignment -name POWER_PRESET_COOLING_SOLUTION "23 MM HEAT SINK WITH 200 LFPM AIRFLOW"
+set_global_assignment -name POWER_BOARD_THERMAL_MODEL "NONE (CONSERVATIVE)"
+set_global_assignment -name BOARD "MAX 10 DE10 - Lite"
+set_global_assignment -name PARTITION_NETLIST_TYPE SOURCE -section_id Top
+set_global_assignment -name PARTITION_FITTER_PRESERVATION_LEVEL PLACEMENT_AND_ROUTING -section_id Top
+set_global_assignment -name PARTITION_COLOR 16764057 -section_id Top
+
+set_location_assignment PIN_P11 -to clk
+set_location_assignment PIN_C14 -to SevSeg0[0]
+set_location_assignment PIN_E15 -to SevSeg0[1]
+set_location_assignment PIN_C15 -to SevSeg0[2]
+set_location_assignment PIN_C16 -to SevSeg0[3]
+set_location_assignment PIN_E16 -to SevSeg0[4]
+set_location_assignment PIN_D17 -to SevSeg0[5]
+set_location_assignment PIN_C17 -to SevSeg0[6]
+
+set_location_assignment PIN_C18 -to SevSeg1[0]
+set_location_assignment PIN_D18 -to SevSeg1[1]
+set_location_assignment PIN_E18 -to SevSeg1[2]
+set_location_assignment PIN_B16 -to SevSeg1[3]
+set_location_assignment PIN_A17 -to SevSeg1[4]
+set_location_assignment PIN_A18 -to SevSeg1[5]
+set_location_assignment PIN_B17 -to SevSeg1[6]
+
+set_location_assignment PIN_B20 -to SevSeg2[0]
+set_location_assignment PIN_A20 -to SevSeg2[1]
+set_location_assignment PIN_B19 -to SevSeg2[2]
+set_location_assignment PIN_A21 -to SevSeg2[3]
+set_location_assignment PIN_B21 -to SevSeg2[4]
+set_location_assignment PIN_C22 -to SevSeg2[5]
+set_location_assignment PIN_B22 -to SevSeg2[6]
+
+set_location_assignment PIN_F21 -to SevSeg3[0]
+set_location_assignment PIN_E22 -to SevSeg3[1]
+set_location_assignment PIN_E21 -to SevSeg3[2]
+set_location_assignment PIN_C19 -to SevSeg3[3]
+set_location_assignment PIN_C20 -to SevSeg3[4]
+set_location_assignment PIN_D19 -to SevSeg3[5]
+set_location_assignment PIN_E17 -to SevSeg3[6]
+
+set_location_assignment PIN_F18 -to SevSeg4[0]
+set_location_assignment PIN_E20 -to SevSeg4[1]
+set_location_assignment PIN_E19 -to SevSeg4[2]
+set_location_assignment PIN_J18 -to SevSeg4[3]
+set_location_assignment PIN_H19 -to SevSeg4[4]
+set_location_assignment PIN_F19 -to SevSeg4[5]
+set_location_assignment PIN_F20 -to SevSeg4[6]
+
+set_location_assignment PIN_J20 -to SevSeg5[0]
+set_location_assignment PIN_K20 -to SevSeg5[1]
+set_location_assignment PIN_L18 -to SevSeg5[2]
+set_location_assignment PIN_N18 -to SevSeg5[3]
+set_location_assignment PIN_M20 -to SevSeg5[4]
+set_location_assignment PIN_N19 -to SevSeg5[5]
+set_location_assignment PIN_N20 -to SevSeg5[6]
+
+set_location_assignment PIN_AA1 -to oVGA_R[0]
+set_location_assignment PIN_V1 -to oVGA_R[1]
+set_location_assignment PIN_Y2 -to oVGA_R[2]
+set_location_assignment PIN_Y1 -to oVGA_R[3]
+set_location_assignment PIN_W1 -to oVGA_G[0]
+set_location_assignment PIN_T2 -to oVGA_G[1]
+set_location_assignment PIN_R2 -to oVGA_G[2]
+set_location_assignment PIN_R1 -to oVGA_G[3]
+set_location_assignment PIN_P1 -to oVGA_B[0]
+set_location_assignment PIN_T1 -to oVGA_B[1]
+set_location_assignment PIN_P4 -to oVGA_B[2]
+set_location_assignment PIN_N2 -to oVGA_B[3]
+
+set_location_assignment PIN_R20 -to DRAM_ADDR[12]
+set_location_assignment PIN_P20 -to DRAM_ADDR[11]
+set_location_assignment PIN_T20 -to DRAM_ADDR[10]
+set_location_assignment PIN_P19 -to DRAM_ADDR[9]
+set_location_assignment PIN_P18 -to DRAM_ADDR[8]
+set_location_assignment PIN_R18 -to DRAM_ADDR[7]
+set_location_assignment PIN_T19 -to DRAM_ADDR[6]
+set_location_assignment PIN_T18 -to DRAM_ADDR[5]
+set_location_assignment PIN_U19 -to DRAM_ADDR[4]
+set_location_assignment PIN_U18 -to DRAM_ADDR[3]
+set_location_assignment PIN_V18 -to DRAM_ADDR[2]
+set_location_assignment PIN_W19 -to DRAM_ADDR[1]
+set_location_assignment PIN_U17 -to DRAM_ADDR[0]
+set_location_assignment PIN_T22 -to DRAM_BA[1]
+set_location_assignment PIN_T21 -to DRAM_BA[0]
+set_location_assignment PIN_U21 -to DRAM_CAS_N
+set_location_assignment PIN_N22 -to DRAM_CKE
+set_location_assignment PIN_L14 -to DRAM_CLK
+set_location_assignment PIN_U20 -to DRAM_CS_N
+set_location_assignment PIN_F22 -to DRAM_DQ[15]
+set_location_assignment PIN_G19 -to DRAM_DQ[14]
+set_location_assignment PIN_G20 -to DRAM_DQ[13]
+set_location_assignment PIN_G22 -to DRAM_DQ[12]
+set_location_assignment PIN_H22 -to DRAM_DQ[11]
+set_location_assignment PIN_H21 -to DRAM_DQ[10]
+set_location_assignment PIN_J22 -to DRAM_DQ[9]
+set_location_assignment PIN_P21 -to DRAM_DQ[8]
+set_location_assignment PIN_V21 -to DRAM_DQ[7]
+set_location_assignment PIN_W20 -to DRAM_DQ[6]
+set_location_assignment PIN_W22 -to DRAM_DQ[5]
+set_location_assignment PIN_Y22 -to DRAM_DQ[4]
+set_location_assignment PIN_AA21 -to DRAM_DQ[3]
+set_location_assignment PIN_AA22 -to DRAM_DQ[2]
+set_location_assignment PIN_Y20 -to DRAM_DQ[1]
+set_location_assignment PIN_Y21 -to DRAM_DQ[0]
+set_location_assignment PIN_V22 -to DRAM_LDQM
+set_location_assignment PIN_U22 -to DRAM_RAS_N
+set_location_assignment PIN_J21 -to DRAM_UDQM
+set_location_assignment PIN_V20 -to DRAM_WE_N
+
+
+set_location_assignment PIN_A13 -to manclk
+set_location_assignment PIN_C12 -to reset
+set_location_assignment PIN_A7 -to game_reset
+set_location_assignment PIN_B8 -to clk_fwd
+set_location_assignment PIN_C13 -to cs_we_rdy[5]
+set_location_assignment PIN_D13 -to cs_we_rdy[4]
+set_location_assignment PIN_B10 -to cs_we_rdy[3]
+set_location_assignment PIN_A10 -to cs_we_rdy[2]
+set_location_assignment PIN_A8 -to cs_we_rdy[0]
+set_location_assignment PIN_A9 -to cs_we_rdy[1]
+set_location_assignment PIN_E14 -to cs_we_rdy[6]
+set_location_assignment PIN_AA2 -to action
+set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to SevSeg0[6]
+set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to SevSeg0[5]
+set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to SevSeg0[4]
+set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to SevSeg0[3]
+set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to SevSeg0[2]
+set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to SevSeg0[1]
+set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to SevSeg0[0]
+set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to SevSeg1[6]
+set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to SevSeg1[5]
+set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to SevSeg1[4]
+set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to SevSeg1[3]
+set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to SevSeg1[2]
+set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to SevSeg1[1]
+set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to SevSeg1[0]
+set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to SevSeg2[6]
+set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to SevSeg2[5]
+set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to SevSeg2[4]
+set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to SevSeg2[3]
+set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to SevSeg2[2]
+set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to SevSeg2[1]
+set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to SevSeg2[0]
+set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to SevSeg3[6]
+set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to SevSeg3[5]
+set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to SevSeg3[4]
+set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to SevSeg3[3]
+set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to SevSeg3[2]
+set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to SevSeg3[1]
+set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to SevSeg3[0]
+set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to SevSeg4[6]
+set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to SevSeg4[5]
+set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to SevSeg4[4]
+set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to SevSeg4[3]
+set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to SevSeg4[2]
+set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to SevSeg4[1]
+set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to SevSeg4[0]
+set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to SevSeg5[6]
+set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to SevSeg5[5]
+set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to SevSeg5[4]
+set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to SevSeg5[3]
+set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to SevSeg5[2]
+set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to SevSeg5[1]
+set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to SevSeg5[0]
+set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to action
+set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to clk_fwd
+set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to cs_we_rdy[6]
+set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to cs_we_rdy[5]
+set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to cs_we_rdy[4]
+set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to cs_we_rdy[3]
+set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to cs_we_rdy[2]
+set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to cs_we_rdy[1]
+set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to cs_we_rdy[0]
+set_instance_assignment -name IO_STANDARD "3.3 V SCHMITT TRIGGER" -to game_reset
+set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to manclk
+set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to reset
+set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to clk
+set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to DRAM_ADDR[0]
+set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to DRAM_ADDR[1]
+set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to DRAM_ADDR[2]
+set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to DRAM_ADDR[3]
+set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to DRAM_ADDR[4]
+set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to DRAM_ADDR[5]
+set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to DRAM_ADDR[6]
+set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to DRAM_ADDR[7]
+set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to DRAM_ADDR[8]
+set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to DRAM_ADDR[9]
+set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to DRAM_ADDR[10]
+set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to DRAM_ADDR[11]
+set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to DRAM_ADDR[12]
+set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to DRAM_BA[0]
+set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to DRAM_BA[1]
+set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to DRAM_CAS_N
+set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to DRAM_CKE
+set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to DRAM_CLK
+set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to DRAM_CS_N
+set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to DRAM_DQ[0]
+set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to DRAM_DQ[1]
+set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to DRAM_DQ[2]
+set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to DRAM_DQ[3]
+set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to DRAM_DQ[4]
+set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to DRAM_DQ[5]
+set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to DRAM_DQ[6]
+set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to DRAM_DQ[7]
+set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to DRAM_DQ[8]
+set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to DRAM_DQ[9]
+set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to DRAM_DQ[10]
+set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to DRAM_DQ[11]
+set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to DRAM_DQ[12]
+set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to DRAM_DQ[13]
+set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to DRAM_DQ[14]
+set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to DRAM_DQ[15]
+set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to DRAM_LDQM
+set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to DRAM_RAS_N
+set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to DRAM_UDQM
+set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to DRAM_WE_N
+
+
+set_global_assignment -name VERILOG_FILE sdram/sdram_write.v
+set_global_assignment -name VERILOG_FILE sdram/sdram_read.v
+set_global_assignment -name VERILOG_FILE sdram/sdram_intialize.v
+set_global_assignment -name VERILOG_FILE sdram/sdram_controller.v
+set_global_assignment -name VERILOG_FILE 6502/ALU.v
+set_global_assignment -name SYSTEMVERILOG_FILE ASCII27Seg.sv
+set_global_assignment -name SYSTEMVERILOG_FILE TIA/TIA_COLOR.sv
+set_global_assignment -name SYSTEMVERILOG_FILE TIA/Tia_audio.sv
+set_global_assignment -name SYSTEMVERILOG_FILE TIA/TIA.sv
+set_global_assignment -name SYSTEMVERILOG_FILE vgaCtl.sv
+set_global_assignment -name SYSTEMVERILOG_FILE rom_tb.sv
+set_global_assignment -name SYSTEMVERILOG_FILE rom_controller.sv
+set_global_assignment -name SYSTEMVERILOG_FILE RIOT.sv
+set_global_assignment -name SYSTEMVERILOG_FILE memory.sv
+set_global_assignment -name SYSTEMVERILOG_FILE Living_Room.sv
+set_global_assignment -name VERILOG_FILE cpu.v
+set_global_assignment -name SYSTEMVERILOG_FILE atari2600.sv
+set_global_assignment -name VERILOG_FILE ALU.v
+set_global_assignment -name SYSTEMVERILOG_FILE a6507.sv
+set_global_assignment -name VERILOG_FILE DE10_LITE_Golden_Top.v
+set_global_assignment -name QIP_FILE pll.qip
+set_location_assignment PIN_N3 -to oVGA_HS
+set_location_assignment PIN_N1 -to oVGA_VS
+set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to oVGA_B[3]
+set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to oVGA_B[2]
+set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to oVGA_B[1]
+set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to oVGA_B[0]
+set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to oVGA_G[3]
+set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to oVGA_G[2]
+set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to oVGA_G[1]
+set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to oVGA_G[0]
+set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to oVGA_HS
+set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to oVGA_R[3]
+set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to oVGA_R[2]
+set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to oVGA_R[1]
+set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to oVGA_R[0]
+set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to oVGA_VS
+set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to up
+set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to right
+set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to left
+set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to hex_choice[0]
+set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to hex_choice[1]
+set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to down
+set_location_assignment PIN_Y3 -to right
+set_location_assignment PIN_Y6 -to up
+set_location_assignment PIN_Y4 -to down
+set_location_assignment PIN_Y5 -to left
+set_location_assignment PIN_V10 -to address_bus[12]
+set_location_assignment PIN_V8 -to address_bus[11]
+set_location_assignment PIN_V9 -to address_bus[10]
+set_location_assignment PIN_V7 -to address_bus[9]
+set_location_assignment PIN_W6 -to address_bus[8]
+set_location_assignment PIN_W5 -to address_bus[7]
+set_location_assignment PIN_AA14 -to address_bus[6]
+set_location_assignment PIN_W12 -to address_bus[5]
+set_location_assignment PIN_AB12 -to address_bus[4]
+set_location_assignment PIN_AB11 -to address_bus[3]
+set_location_assignment PIN_AA8 -to address_bus[0]
+set_location_assignment PIN_AA9 -to address_bus[1]
+set_location_assignment PIN_AB10 -to address_bus[2]
+set_location_assignment PIN_AA15 -to data_bus[7]
+set_location_assignment PIN_W13 -to data_bus[6]
+set_location_assignment PIN_AB13 -to data_bus[5]
+set_location_assignment PIN_Y11 -to data_bus[4]
+set_location_assignment PIN_W11 -to data_bus[3]
+set_location_assignment PIN_AA10 -to data_bus[2]
+set_location_assignment PIN_Y8 -to data_bus[1]
+set_location_assignment PIN_Y7 -to data_bus[0]
+set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to address_bus[12]
+set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to address_bus[11]
+set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to address_bus[10]
+set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to address_bus[9]
+set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to address_bus[8]
+set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to address_bus[7]
+set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to address_bus[6]
+set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to address_bus[5]
+set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to address_bus[4]
+set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to address_bus[3]
+set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to address_bus[2]
+set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to address_bus[1]
+set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to address_bus[0]
+set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to data_bus[7]
+set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to data_bus[6]
+set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to data_bus[5]
+set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to data_bus[4]
+set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to data_bus[3]
+set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to data_bus[2]
+set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to data_bus[1]
+set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to data_bus[0]
+set_location_assignment PIN_F15 -to hex_choice[1]
+set_location_assignment PIN_B14 -to hex_choice[0]
+set_instance_assignment -name PARTITION_HIERARCHY root_partition -to | -section_id Top
